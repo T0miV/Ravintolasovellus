@@ -87,11 +87,6 @@ const Layout = () => {
 
                 </Toolbar>
             </AppBar>
-            <Container sx={{
-                minHeight: '500px'
-            }}>
-                <Typography></Typography>
-            </Container>
 
             <Outlet />
         </Container>
