@@ -30,9 +30,8 @@ const Layout = () => {
                 <Toolbar disableGutters>
                     <Box 
                         component="img"
-                        sx={{ height:'50px', marginLeft: '5px', cursor: 'pointer' }}
+                        sx={{ height:'50px', marginLeft: '5px' }}
                         src="img/logo.png"
-                        onClick={() => navigoi('/')}
                     />
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none'}}}>
                         <IconButton
@@ -59,6 +58,9 @@ const Layout = () => {
                                 display: {xs: 'block', sm: 'none'},
                             }}
                             >
+                            <MenuItem key="etusivu" onClick={() => navigoi(`/`)}>
+                                <Typography textAlign="center">Etusivu</Typography>
+                            </MenuItem>
                             {pages.map((page => (
                                 <MenuItem key={page} onClick={() => navigoi(`/${page}`)}>
                                     <Typography textAlign="center">{page}</Typography>
@@ -69,6 +71,9 @@ const Layout = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex'}}}>
+                            <Button onClick={() => navigoi(`/`)}>
+                                Etusivu
+                            </Button>
                         {pages.map((page => (
                             <Button onClick={() => navigoi(`/${page}`)}>
                                 {page}
