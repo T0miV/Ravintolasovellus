@@ -77,10 +77,10 @@ const Layout = () => {
                     </Box>
                     
                     <Box sx={{ flexGrow: 0 }}>
-                        <IconButton>
+                        <IconButton onClick={() => navigoi('/shoppingcart')}>
                             <ShoppingCartIcon />
                         </IconButton>
-                        <IconButton>
+                        <IconButton onClick={() => navigoi('/profile')}>
                             <AccountBoxIcon />
                         </IconButton>
                     </Box>

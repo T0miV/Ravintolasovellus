@@ -7,6 +7,8 @@ import Sivu1 from './pages/Sivu1';
 import { CssBaseline } from '@mui/material';
 import Sivu2 from './pages/Sivu2';
 import Sivu3 from './pages/Sivu3';
+import Cart from './pages/Cart';
+import Profile from './pages/Profile';
 
 const theme = createTheme({
   palette: {
@@ -35,9 +37,11 @@ const App: FC = () => {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Etusivu />} />
-            <Route path='/Sivu1' element={<Sivu1 />} />
-            <Route path='/Sivu2' element={<Sivu2 />} />
-            <Route path='/Sivu3' element={<Sivu3 />} />
+            <Route path='/sivu1' element={<Sivu1 />} />
+            <Route path='/sivu2' element={<Sivu2 />} />
+            <Route path='/sivu3' element={<Sivu3 />} />
+            <Route path='/shoppingcart' element={<Cart />} />
+            <Route path='/profile' element={<Profile />} />
           </Route>
         </Routes>
       </BrowserRouter>
