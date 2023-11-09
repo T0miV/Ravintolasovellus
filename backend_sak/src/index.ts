@@ -1,4 +1,4 @@
-console.log("wadap boyz");
+console.log("wadap boyzs");
 
 import express, { Express, Request, Response} from "express";
 import sqlite3 from "sqlite3";
