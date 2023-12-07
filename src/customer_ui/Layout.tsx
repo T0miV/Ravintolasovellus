@@ -14,7 +14,7 @@ interface Meal {
     kategoria: string
 }
 
-const pages = ["Sivu1", "Menu", "Sivu3"]
+const pages = ["Sivu1", "Menu",]
 
 declare module '@mui/material/styles' {
     interface TypographyVariants {

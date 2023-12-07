@@ -55,7 +55,6 @@ const Profile: FC<Props>=({currentuser})=>{
             <Box>
                 <Typography>
                     <h1>Käyttäjätiedot ja salasanat </h1>
-                    <button onClick={addData}>Add new</button>
                     <div className="data-grid">
                         <table>
                         <thead>
